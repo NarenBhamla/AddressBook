@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DatePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="htp-ow-SlX">
+                                <rect key="frame" x="27.5" y="208" width="320" height="251"/>
+                                <date key="date" timeIntervalSinceReferenceDate="575285697.57420802">
+                                    <!--2019-03-26 09:34:57 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="dateChangeClicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="SH7-nq-bEL"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plese Enter your DOB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlm-L5-alk">
+                                <rect key="frame" x="20" y="90" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVb-l7-bdc">
+                                <rect key="frame" x="50" y="517" width="275" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fVb-l7-bdc" secondAttribute="bottom" constant="112" id="4ZJ-0I-JFP"/>
+                            <constraint firstItem="htp-ow-SlX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6xz-CU-gs3"/>
+                            <constraint firstItem="fVb-l7-bdc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="CnL-4v-OzK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tlm-L5-alk" secondAttribute="trailing" constant="20" id="GE3-hm-U1Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fVb-l7-bdc" secondAttribute="trailing" constant="50" id="GXf-MM-rHd"/>
+                            <constraint firstItem="htp-ow-SlX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QDj-K9-kFy"/>
+                            <constraint firstItem="tlm-L5-alk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="g6I-dM-UV6"/>
+                            <constraint firstItem="tlm-L5-alk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vON-BH-a3j"/>
+                            <constraint firstItem="fVb-l7-bdc" firstAttribute="top" secondItem="htp-ow-SlX" secondAttribute="bottom" constant="75.5" id="y6I-Mt-Qpf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dobDatePicker" destination="htp-ow-SlX" id="gsI-ma-haY"/>
+                        <outlet property="labtext" destination="fVb-l7-bdc" id="4bc-EX-Ujo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
